@@ -1,14 +1,6 @@
 body {
     background-color: black;
     color: white;
-    display: flex;
     
 }
 
-.top-bar {
-    font-size: 20px;
-    display: flex;
-    height: 50px;
-    align-items: center;
-    text-align: justify;
-}
