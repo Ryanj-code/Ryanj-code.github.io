@@ -1,0 +1,22 @@
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-pop-in-1 {
+  animation: popIn 0.5s ease-in;
+}
+
+.animate-pop-in-2 {
+  animation: popIn 1s ease-in;
+}
+
+.animate-pop-in-3 {
+  animation: popIn 1.5s ease-in;
+}

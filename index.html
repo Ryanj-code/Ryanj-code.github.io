@@ -2,101 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Ryan Jiang | CS</title>
   </head>
   <body>
-    <header>
-      <nav class="container">
-        <div class="logo">Ryan Jiang</div>
-        <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#works">Works</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </header>
-
-    <section class="hero" id="home">
-      <div class="container">
-        <h1>Hi, I'm Ryan Jiang</h1>
-        <h2>A developer passionate about learning.</h2>
-        <p>
-          I'm a developer who thrives continuous learning and exploring new
-          technologies. I’m always looking for ways to expand my knowledge and
-          push the boundaries of what I can create. Whether it’s refining my
-          existing skills or experimenting with new tools, I approach every
-          project with the intent to improve myself.
-        </p>
-      </div>
-    </section>
-
-    <section class="works" id="works">
-      <div class="container">
-        <h2>My Works</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <img src="/img/image.png" alt="Project 1" />
-            <div class="project-info">
-              <h3>CodeStash</h3>
-              <p>
-                Developed a full-stack snippet management application enabling
-                users to create, edit, delete, and view code snippets with
-                syntax highlighting and a detailed snippet view.
-              </p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="/img/image.png" alt="Project 2" />
-            <div class="project-info">
-              <h3>Image Classification Model</h3>
-              <p>
-                Partnered with a friend to design and implement a deep learning
-                model using CNN for image classification across five categories,
-                leveraging ResNet and InceptionV4 architectures.
-              </p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="/img/image.png" alt="Project 3" />
-            <div class="project-info">
-              <h3>Travel Journey</h3>
-              <p>
-                Developed a full-stack entry management application enabling
-                users to create, edit, delete, and view journey entries.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2>Get In Touch</h2>
-        <form class="contact-form">
-          <div class="form-group">
-            <input type="text" placeholder="Your Name" required />
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" required />
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 Ryan Jiang. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <script src="/js/script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
