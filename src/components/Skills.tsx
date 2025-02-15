@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import SkillsItem from "./SkillsItem";
 
 const Skills = forwardRef<HTMLElement, {}>((props, ref) => {
   return (
@@ -12,54 +13,32 @@ const Skills = forwardRef<HTMLElement, {}>((props, ref) => {
 
         <div className="mt-15 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Languages */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-2xl font-semibold text-white mb-4">
-              Languages
-            </h3>
-            <ul className="text-gray-400 space-y-2">
-              <li>C++</li>
-              <li>Python</li>
-              <li>Java</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
+          <SkillsItem
+            title="Languages"
+            icon={<i className="fas fa-code text-white" />}
+            skills={["C++", "Python", "Java", "HTML", "CSS", "JavaScript"]}
+          />
 
           {/* Frameworks */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-2xl font-semibold text-white mb-4">
-              Frameworks
-            </h3>
-            <ul className="text-gray-400 space-y-2">
-              <li>Node.js</li>
-              <li>React</li>
-              <li>Express</li>
-              <li>Flutter</li>
-            </ul>
-          </div>
+          <SkillsItem
+            title="Frameworks"
+            icon={<i className="fas fa-cogs text-white" />}
+            skills={["Node.js", "React", "Express", "Flutter"]}
+          />
 
           {/* Tools */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-2xl font-semibold text-white mb-4">Tools</h3>
-            <ul className="text-gray-400 space-y-2">
-              <li>Git</li>
-              <li>Ubuntu</li>
-              <li>Linux</li>
-              <li>Figma</li>
-            </ul>
-          </div>
+          <SkillsItem
+            title="Tools"
+            icon={<i className="fas fa-toolbox text-white" />}
+            skills={["Git", "Ubuntu", "Linux", "Figma"]}
+          />
 
           {/* Technologies */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-2xl font-semibold text-white mb-4">
-              Technologies
-            </h3>
-            <ul className="text-gray-400 space-y-2">
-              <li>MongoDB</li>
-              <li>NumPy</li>
-            </ul>
-          </div>
+          <SkillsItem
+            title="Technologies"
+            icon={<i className="fas fa-database text-white" />}
+            skills={["MongoDB", "NumPy"]}
+          />
         </div>
       </div>
     </section>

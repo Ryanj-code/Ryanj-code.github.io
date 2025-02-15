@@ -39,14 +39,14 @@ const Projects = forwardRef<HTMLElement, {}>((props, ref) => {
           {projectList.map((project, index) => (
             <div
               key={index}
-              className="bg-teal-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 cursor-pointer transition"
+              className="rounded-lg border-blue-900 border-2 overflow-hidden shadow-lg hover:scale-105 cursor-pointer transition"
             >
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-50 object-cover"
+                className="w-full h-100 object-cover"
               />
-              <div className="p-5">
+              <div className="p-5 bg-blue-900 ">
                 <h3 className="text-xl font-semibold text-white">
                   {project.title}
                 </h3>
