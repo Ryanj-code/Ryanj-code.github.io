@@ -3,13 +3,12 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   type ScrollToSection = (ref: React.RefObject<HTMLElement>) => void;
   const homeRef = useRef<HTMLElement>(null);
   const projectRef = useRef<HTMLElement>(null);
-  const contactRef = useRef<HTMLElement>(null);
   const skillRef = useRef<HTMLElement>(null);
 
   const scrollToSection: ScrollToSection = (ref) => {
@@ -23,12 +22,11 @@ const App = () => {
         homeRef={homeRef}
         projectRef={projectRef}
         skillRef={skillRef}
-        contactRef={contactRef}
       />
       <About ref={homeRef} />
       <Projects ref={projectRef} />
       <Skills ref={skillRef} />
-      <Contact ref={contactRef} />
+      <Footer />
     </div>
   );
 };

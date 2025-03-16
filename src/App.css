@@ -1,7 +1,10 @@
-@keyframes popIn {
+@keyframes slideUp {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
+  }
+  20% {
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
@@ -9,14 +12,16 @@
   }
 }
 
-.animate-pop-in-1 {
-  animation: popIn 0.5s ease-in;
+.animate-slide-up-1 {
+  animation: slideUp 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.animate-pop-in-2 {
-  animation: popIn 1s ease-in;
+.animate-slide-up-2 {
+  animation: slideUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s forwards;
+  opacity: 0;
 }
 
-.animate-pop-in-3 {
-  animation: popIn 1.5s ease-in;
+.animate-slide-up-3 {
+  animation: slideUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.4s forwards;
+  opacity: 0;
 }
