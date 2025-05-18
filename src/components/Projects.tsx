@@ -24,7 +24,7 @@ const Projects = forwardRef<HTMLElement, {}>((props, ref) => {
       desc: "A Book Recommender app made using Google Books API to allow users to search, favorite, and manage their book collection.",
       technologies: ["Flutter", "Firebase", "Dart"],
       img: bookRecommenderImg,
-      link: "https://nextpage-e75cd.web.app/",
+      link: "https://github.com/Ryanj-code/nextpage",
     },
   ];
 
