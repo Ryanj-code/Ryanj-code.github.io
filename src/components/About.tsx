@@ -5,7 +5,7 @@ const About = forwardRef<HTMLElement, {}>((props, ref) => {
   return (
     <section
       ref={ref}
-      className="py-16 text-center min-h-screen flex flex-col justify-center"
+      className="py-16 text-center min-h-screen flex flex-col justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden"
     >
       <div className="container mx-auto px-6">
         <h1 className="text-white text-4xl md:text-6xl font-bold animate-slide-up-1">

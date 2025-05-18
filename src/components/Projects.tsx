@@ -10,7 +10,7 @@ const Projects = forwardRef<HTMLElement, {}>((props, ref) => {
       desc: "A Full-stack snippet management application with syntax highlighting and a detailed snippet view.",
       technologies: ["MongoDB", "Express", "React", "Node.js"],
       img: snippetImg,
-      link: "",
+      link: "https://github.com/Ryanj-code/CodeStash",
     },
     {
       title: "Image Classification Model",
@@ -24,7 +24,7 @@ const Projects = forwardRef<HTMLElement, {}>((props, ref) => {
       desc: "A Book Recommender app made using Google Books API to allow users to search, favorite, and manage their book collection.",
       technologies: ["Flutter", "Firebase", "Dart"],
       img: bookRecommenderImg,
-      link: "",
+      link: "https://nextpage-e75cd.web.app/",
     },
   ];
 
@@ -79,6 +79,8 @@ const Projects = forwardRef<HTMLElement, {}>((props, ref) => {
 
                 <a
                   href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block px-4 py-2 border border-blue-500 text-blue-400 rounded-md hover:bg-blue-500 hover:text-white transition-colors text-sm"
                 >
                   View Project

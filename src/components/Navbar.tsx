@@ -13,7 +13,7 @@ const Navbar = ({
   skillRef,
 }: NavbarProps) => {
   const handleOpenPDF = () => {
-    window.open("/Ryan_Jiang_Resume.pdf", "_blank");
+    window.open("/Ryan-Jiang-Resume.pdf", "_blank");
   };
 
   return (
