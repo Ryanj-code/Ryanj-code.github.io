@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import "../App.css";
 
-const About = forwardRef<HTMLElement, {}>((props, ref) => {
+const About = forwardRef<HTMLElement, {}>((_props, ref) => {
   return (
     <section
       ref={ref}

@@ -1,15 +1,24 @@
 import { forwardRef } from "react";
-import snippetImg from "../assets/snippet.png";
+import nexusImg from "../assets/nexus.png";
+import codeStashImg from "../assets/codestash.png";
 import cnnImg from "../assets/cnn.png";
 import bookRecommenderImg from "../assets/bookrecommender.png";
+import travelJourneyImg from "../assets/traveljourney.png";
 
-const Projects = forwardRef<HTMLElement, {}>((props, ref) => {
+const Projects = forwardRef<HTMLElement, {}>((_props, ref) => {
   const projectList = [
+    {
+      title: "Nexus",
+      desc: "A team-finding app for gamers that matches users based on game preferences, regions, and playstyle using filters, chat, and a reputation system.",
+      technologies: ["Go", "Gin", "GraphQL", "PostgreSQL", "React", "JWT"],
+      img: nexusImg,
+      link: "",
+    },
     {
       title: "CodeStash",
       desc: "A Full-stack snippet management application with syntax highlighting and a detailed snippet view.",
       technologies: ["MongoDB", "Express", "React", "Node.js"],
-      img: snippetImg,
+      img: codeStashImg,
       link: "https://github.com/Ryanj-code/CodeStash",
     },
     {
@@ -25,6 +34,13 @@ const Projects = forwardRef<HTMLElement, {}>((props, ref) => {
       technologies: ["Flutter", "Firebase", "Dart"],
       img: bookRecommenderImg,
       link: "https://github.com/Ryanj-code/nextpage",
+    },
+    {
+      title: "Travel Journey",
+      desc: "A travel diary web that allows users to log trips, upload photos to document their journeys around the world.",
+      technologies: ["React", "Node.js", "Express", "MongoDB"],
+      img: travelJourneyImg,
+      link: "https://github.com/Ryanj-code/Travel-Journey",
     },
   ];
 

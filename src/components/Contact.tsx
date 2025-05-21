@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 
-const Contact = forwardRef<HTMLElement, {}>((props, ref) => {
+const Contact = forwardRef<HTMLElement, {}>((_props, ref) => {
   return (
     <section ref={ref} className="py-16 text-center">
       <div className="container mx-auto px-6">
