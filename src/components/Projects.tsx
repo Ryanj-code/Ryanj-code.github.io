@@ -1,9 +1,9 @@
 import { forwardRef } from "react";
-import nexusImg from "../assets/nexus.png";
-import codeStashImg from "../assets/codestash.png";
-import cnnImg from "../assets/cnn.png";
-import bookRecommenderImg from "../assets/bookrecommender.png";
-import travelJourneyImg from "../assets/traveljourney.png";
+import nexusImg from "../assets/Nexus.png";
+import codeStashImg from "../assets/CodeStash.png";
+import modelImg from "../assets/Model.png";
+import bookRecommenderImg from "../assets/BookRecommender.png";
+import travelJourneyImg from "../assets/TravelJourney.png";
 
 const Projects = forwardRef<HTMLElement, {}>((_props, ref) => {
   const projectList = [
@@ -12,11 +12,11 @@ const Projects = forwardRef<HTMLElement, {}>((_props, ref) => {
       desc: "A team-finding app for gamers that matches users based on game preferences, regions, and playstyle using filters, chat, and a reputation system.",
       technologies: ["Go", "Gin", "GraphQL", "PostgreSQL", "React", "JWT"],
       img: nexusImg,
-      link: "",
+      link: "https://nexus-mu-ten.vercel.app/",
     },
     {
       title: "CodeStash",
-      desc: "A Full-stack snippet management application with syntax highlighting and a detailed snippet view.",
+      desc: "A snippet management application with syntax highlighting, detailed snippet view, and option to download snippets.",
       technologies: ["MongoDB", "Express", "React", "Node.js"],
       img: codeStashImg,
       link: "https://github.com/Ryanj-code/CodeStash",
@@ -25,7 +25,7 @@ const Projects = forwardRef<HTMLElement, {}>((_props, ref) => {
       title: "Image Classification Model",
       desc: "A Deep learning model using CNN based on ResNet and InceptionV4 architectures for image classification.",
       technologies: ["Python", "TensorFlow", "Keras"],
-      img: cnnImg,
+      img: modelImg,
       link: "",
     },
     {
@@ -37,7 +37,7 @@ const Projects = forwardRef<HTMLElement, {}>((_props, ref) => {
     },
     {
       title: "Travel Journey",
-      desc: "A travel diary web that allows users to log trips, upload photos to document their journeys around the world.",
+      desc: "A travel diary app that lets users to log their trips and upload photos to document them.",
       technologies: ["React", "Node.js", "Express", "MongoDB"],
       img: travelJourneyImg,
       link: "https://github.com/Ryanj-code/Travel-Journey",

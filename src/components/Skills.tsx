@@ -31,7 +31,7 @@ import {
   SiGraphql,
 } from "react-icons/si";
 
-const Skills = forwardRef<HTMLElement, {}>((props, ref) => {
+const Skills = forwardRef<HTMLElement, {}>((_props, ref) => {
   return (
     <section
       ref={ref}
