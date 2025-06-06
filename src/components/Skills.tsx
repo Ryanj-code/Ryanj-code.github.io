@@ -35,11 +35,11 @@ const Skills = forwardRef<HTMLElement, {}>((_props, ref) => {
   return (
     <section
       ref={ref}
-      className="bg-gray-900 py-16 text-center min-h-screen flex flex-col justify-center"
+      className="py-16 text-center min-h-screen flex flex-col justify-center"
     >
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-white mb-2">My Skills</h2>
-        <div className="w-24 h-1 bg-blue-500 mx-auto mb-12"></div>
+        <div className="w-24 h-1 bg-indigo-700 mx-auto mb-12"></div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Languages */}
@@ -49,7 +49,6 @@ const Skills = forwardRef<HTMLElement, {}>((_props, ref) => {
             skills={[
               { name: "C++", icon: <SiCplusplus /> },
               { name: "Python", icon: <FaPython /> },
-              { name: "Java", icon: <FaJava /> },
               { name: "JavaScript", icon: <FaJs /> },
               { name: "TypeScript", icon: <SiTypescript /> },
               { name: "HTML", icon: <FaHtml5 /> },

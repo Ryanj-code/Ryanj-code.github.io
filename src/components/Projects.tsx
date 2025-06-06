@@ -1,58 +1,16 @@
 import { forwardRef } from "react";
-import nexusImg from "../assets/Nexus.png";
-import codeStashImg from "../assets/CodeStash.png";
-import modelImg from "../assets/Model.png";
-import bookRecommenderImg from "../assets/BookRecommender.png";
-import travelJourneyImg from "../assets/TravelJourney.png";
+import { projectList } from "../data/ProjectsData";
 
 const Projects = forwardRef<HTMLElement, {}>((_props, ref) => {
-  const projectList = [
-    {
-      title: "Nexus",
-      desc: "A team-finding app for gamers that matches users based on game preferences, regions, and playstyle using filters, chat, and a reputation system.",
-      technologies: ["Go", "Gin", "GraphQL", "PostgreSQL", "React", "JWT"],
-      img: nexusImg,
-      link: "https://nexus-mu-ten.vercel.app/",
-    },
-    {
-      title: "CodeStash",
-      desc: "A snippet management application with syntax highlighting, detailed snippet view, and option to download snippets.",
-      technologies: ["MongoDB", "Express", "React", "Node.js"],
-      img: codeStashImg,
-      link: "https://github.com/Ryanj-code/CodeStash",
-    },
-    {
-      title: "Image Classification Model",
-      desc: "A Deep learning model using CNN based on ResNet and InceptionV4 architectures for image classification.",
-      technologies: ["Python", "TensorFlow", "Keras"],
-      img: modelImg,
-      link: "",
-    },
-    {
-      title: "NextPage",
-      desc: "A Book Recommender app made using Google Books API to allow users to search, favorite, and manage their book collection.",
-      technologies: ["Flutter", "Firebase", "Dart"],
-      img: bookRecommenderImg,
-      link: "https://github.com/Ryanj-code/nextpage",
-    },
-    {
-      title: "Travel Journey",
-      desc: "A travel diary app that lets users to log their trips and upload photos to document them.",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
-      img: travelJourneyImg,
-      link: "https://github.com/Ryanj-code/Travel-Journey",
-    },
-  ];
-
   return (
     <section
       ref={ref}
-      className="bg-gray-900 py-20 text-center min-h-screen flex flex-col justify-center"
+      className="py-20 text-center min-h-screen flex flex-col justify-center"
       id="projects"
     >
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold mb-2 text-white">My Projects</h2>
-        <div className="w-24 h-1 bg-blue-500 mx-auto mb-12"></div>
+        <div className="w-24 h-1 bg-indigo-700 mx-auto mb-12"></div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {projectList.map((project, index) => (
@@ -73,14 +31,10 @@ const Projects = forwardRef<HTMLElement, {}>((_props, ref) => {
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-gray-300 text-sm mb-4 line-clamp-3">
-                  {project.desc}
-                </p>
+                <p className="text-gray-300 text-sm mb-4 line-clamp-3">{project.desc}</p>
 
                 <div>
-                  <p className="text-sm font-medium text-gray-400 mb-2">
-                    Technologies
-                  </p>
+                  <p className="text-sm font-medium text-gray-400 mb-2">Technologies</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, i) => (
                       <span

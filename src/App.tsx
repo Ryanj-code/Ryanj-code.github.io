@@ -10,23 +10,24 @@ const App = () => {
   const homeRef = useRef<HTMLElement>(null);
   const projectRef = useRef<HTMLElement>(null);
   const skillRef = useRef<HTMLElement>(null);
+  const footerRef = useRef<HTMLElement>(null);
 
   const scrollToSection: ScrollToSection = (ref) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className="bg-gray-950 text-white">
+    <div className="bg-gradient-to-br from-[#0a0a0f] via-[#12172a] to-[#0f3460] text-white">
       <Navbar
         scrollToSection={scrollToSection}
         homeRef={homeRef}
         projectRef={projectRef}
         skillRef={skillRef}
       />
-      <About ref={homeRef} />
+      <About sectionRef={homeRef} footerRef={footerRef} />
       <Projects ref={projectRef} />
       <Skills ref={skillRef} />
-      <Footer />
+      <Footer ref={footerRef} />
     </div>
   );
 };

@@ -17,7 +17,7 @@ const Navbar = ({
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-gray-950/20 backdrop-blur-md z-50 py-4 px-6 ">
+    <header className="fixed top-0 left-0 right-0 backdrop-blur-md z-50 py-4 px-6 ">
       <nav className="container mx-auto flex justify-between items-center px-6">
         <div className="text-2xl font-bold text-blue-500">Ryan Jiang</div>
 
